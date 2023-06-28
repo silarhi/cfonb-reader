@@ -14,21 +14,23 @@
     {% endblock %}
 </head>
 <body class="layout-default">
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <img
-                        title="SILARI"
-                        alt="SILARHI"
-                        src="{{ asset('build/images/logo-40.png') }}"
-                        srcset="{{ asset('build/images/logo-40.png') }} 1x, {{ asset('build/images/logo-80.png') }} 2x"
-                        width="40"
-                        height="40"
-                >
-                CFONB Reader
-            </a>
-        </div>
-    </nav>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img
+                            title="SILARI"
+                            alt="SILARHI"
+                            src="{{ asset('build/images/logo-40.png') }}"
+                            srcset="{{ asset('build/images/logo-40.png') }} 1x, {{ asset('build/images/logo-80.png') }} 2x"
+                            width="40"
+                            height="40"
+                    >
+                    CFONB Reader
+                </a>
+            </div>
+        </nav>
+    </header>
     {% block body %}{% endblock %}
 </body>
 </html>
