@@ -2,12 +2,16 @@
     "devDependencies": {
         "@babel/core": "^7.17.0",
         "@babel/preset-env": "^7.16.0",
+        "@hotwired/stimulus": "^3.0.0",
+        "@symfony/stimulus-bridge": "^3.2.0",
         "@symfony/webpack-encore": "^4.0.0",
         "core-js": "^3.23.0",
         "husky": ">=6",
         "lint-staged": ">=10",
         "prettier": "^2.8.8",
         "regenerator-runtime": "^0.13.9",
+        "sass": "^1.63.6",
+        "sass-loader": "^13.3.2",
         "webpack": "^5.74.0",
         "webpack-cli": "^4.10.0",
         "webpack-notifier": "^1.15.0"
@@ -23,5 +27,9 @@
     },
     "lint-staged": {
         "*.{js,css,scss,md}": "prettier --write"
+    },
+    "dependencies": {
+        "@fortawesome/fontawesome-free": "^6.4.0",
+        "@tabler/core": "^1.0.0-beta19"
     }
 }
