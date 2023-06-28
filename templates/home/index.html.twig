@@ -6,6 +6,8 @@
     <div class="container py-5" {{ stimulus_controller('home') }}>
         <h1>Dépôt de fichier</h1>
 
+        {% include 'partials/_alerts-wide.html.twig' %}
+
         {{ form_start(form) }}
         <div class="card">
             <div class="card-body">
