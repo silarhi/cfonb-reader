@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ff4d227f7c4856cd979bb4ee49e44d45",
+    "content-hash": "3d88d9ad89127f046ea7f85c6677a239",
     "packages": [
         {
             "name": "monolog/monolog",
@@ -356,6 +356,59 @@
                 "source": "https://github.com/php-fig/log/tree/3.0.0"
             },
             "time": "2021-07-14T16:46:02+00:00"
+        },
+        {
+            "name": "silarhi/cfonb-parser",
+            "version": "4.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/silarhi/cfonb-parser.git",
+                "reference": "80a5ecd9ee472e2b760d6349084787a3ea92758e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/silarhi/cfonb-parser/zipball/80a5ecd9ee472e2b760d6349084787a3ea92758e",
+                "reference": "80a5ecd9ee472e2b760d6349084787a3ea92758e",
+                "shasum": ""
+            },
+            "require": {
+                "php": "~8.1.0 || ~8.2.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^3.16",
+                "phpstan/phpstan": "^1.10",
+                "phpunit/phpunit": "^10",
+                "rector/rector": "^0.15.23",
+                "vimeo/psalm": "^5.9"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Silarhi\\Cfonb\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Guillaume Sainthillier",
+                    "email": "hello@silarhi.fr"
+                }
+            ],
+            "description": "A PHP Parser for CFONB transactions",
+            "keywords": [
+                "cfonb",
+                "etebac",
+                "parser",
+                "swift"
+            ],
+            "support": {
+                "issues": "https://github.com/silarhi/cfonb-parser/issues",
+                "source": "https://github.com/silarhi/cfonb-parser/tree/4.0.0"
+            },
+            "time": "2023-04-03T16:58:46+00:00"
         },
         {
             "name": "symfony/asset",
