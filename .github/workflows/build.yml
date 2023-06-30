@@ -1,0 +1,25 @@
+name: Build docker image
+
+on:
+  push:
+    tags:
+      - v*
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Get all release versions
+        id: get_all_versions
+        run: |
+          echo APP_VERSION=$(echo ${GITHUB_REF} | sed -e "s/refs\/tags\///g" | sed -E "s/v?([0-9]+)\.([0-9]+)\.([0-9]+)(-[a-zA-Z]+(\.[0-9]+)?)?/\1.\2.\3\4/g") >> $GITHUB_ENV
+          echo APP_VERSIONS=$(echo ${GITHUB_REF} | sed -e "s/refs\/tags\///g" | sed -E "s/v?([0-9]+)\.([0-9]+)\.([0-9]+)(-[a-zA-Z]+(\.[0-9]+)?)?/\1.\2.\3\4 \1.\2\4 \1\4/g") >> $GITHUB_ENV
+      - name: Publish to Docker Repository
+        uses: elgohr/Publish-Docker-Github-Action@v5
+        with:
+          name: silarhi/cfonb-reader
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
+          buildargs: APP_VERSION
+          tags: 'stable,${{ env.APP_VERSIONS }}'
