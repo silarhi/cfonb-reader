@@ -35,6 +35,9 @@ ENV COMPOSER_ALLOW_SUPERUSER=1 \
 EXPOSE 80
 WORKDIR /app
 
+# php extensions installer: https://github.com/mlocati/docker-php-extension-installer
+COPY --from=mlocati/php-extension-installer:latest /usr/bin/install-php-extensions /usr/local/bin/
+
 # Install dependencies
 RUN apk add --no-cache \
     bash \
@@ -51,23 +54,14 @@ RUN apk add --no-cache \
     # Reduce layer size
     rm -rf /var/cache/apk/* /tmp/*
 
-# PHP Extensions
-ENV PHPIZE_DEPS \
-    autoconf \
-    g++ \
-    gcc \
-    icu-dev \
-    libzip-dev \
-    make \
-    zlib-dev
-
-RUN apk add --no-cache --virtual .build-deps \
-    $PHPIZE_DEPS && \
-    docker-php-ext-install -j$(nproc) exif intl opcache zip && \
-    pecl install apcu && \
-    docker-php-ext-enable apcu && \
-    apk del .build-deps && \
-    rm -rf /var/cache/apk/* /tmp/*
+RUN set -eux; \
+    install-php-extensions \
+		apcu \
+		exif \
+		intl \
+		opcache \
+		zip \
+    ;
 
 # Config
 COPY docker/nginx.conf /etc/nginx/
