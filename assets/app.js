@@ -13,3 +13,4 @@ import './bootstrap.js';
 // vendors
 import 'bootstrap/js/src/alert';
 import 'bootstrap/js/src/offcanvas';
+import 'bootstrap/js/src/collapse';

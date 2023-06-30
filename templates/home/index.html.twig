@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello HomeController!{% endblock %}
+{% block title %}Accueil{% endblock %}
 
 {% block body %}
     <div class="container py-5" {{ stimulus_controller('home') }}>
@@ -11,6 +11,8 @@
         {{ form_start(form) }}
         <div class="card">
             <div class="card-body">
+                {{ form_errors(form) }}
+                {{ form_row(form.type) }}
                 {{ form_row(form.file) }}
                 {{ form_rest(form) }}
             </div>

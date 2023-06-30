@@ -10,7 +10,10 @@
 
 namespace App\Form;
 
+use App\Cfonb\CfonbManager;
+use App\Validator\Constraints\FileType;
 use Symfony\Component\Form\AbstractType;
+use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 use Symfony\Component\Validator\Constraints\File;
@@ -19,9 +22,21 @@ use Symfony\UX\Dropzone\Form\DropzoneType;
 
 class CfonbFileType extends AbstractType
 {
+    public function __construct()
+    {
+    }
+
     public function buildForm(FormBuilderInterface $builder, array $options): void
     {
         $builder
+            ->add('type', ChoiceType::class, [
+                'required' => false,
+                'placeholder' => 'Automatique',
+                'choices' => [
+                    'CFONB 120' => CfonbManager::TYPE_120,
+                    'CFONB 240' => CfonbManager::TYPE_240,
+                ],
+            ])
             ->add('file', DropzoneType::class, [
                 'label' => false,
                 'constraints' => [
@@ -29,7 +44,7 @@ class CfonbFileType extends AbstractType
                     new File(),
                 ],
                 'attr' => [
-                    'placeholder' => 'Glissez ou déposez votre fichier CFONB 120',
+                    'placeholder' => 'Glissez ou déposez votre fichier CFONB (120 ou 240)',
                 ],
             ])
         ;
@@ -38,7 +53,9 @@ class CfonbFileType extends AbstractType
     public function configureOptions(OptionsResolver $resolver): void
     {
         $resolver->setDefaults([
-            // Configure your form options here
+            'constraints' => [
+                new FileType(),
+            ],
         ]);
     }
 }

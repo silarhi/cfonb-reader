@@ -1,0 +1,50 @@
+<table class="table card-table table-vcenter" id="table-details">
+    <thead>
+    <tr>
+        <th>Date</th>
+        <th>Montant</th>
+        <th>Libellé</th>
+        <th>Détails</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>{{ data.oldBalance.date ? data.oldBalance.date|format_date('short') }}</td>
+        <td>{{ data.oldBalance.amount is not same as(null) ? data.oldBalance.amount|format_currency('EUR') }}</td>
+        <td colspan="2">Solde initial</td>
+    </tr>
+    {% for operation in data.operations %}
+        <tr>
+            <td>{{ operation.date|format_date('short') }}</td>
+            <td>{{ operation.amount|format_currency('EUR') }}</td>
+            <td>{{ operation.label }}</td>
+            <td>
+                {% if operation.metadata is not empty %}
+                    <a class="collapsed btn btn-sm"
+                       data-bs-toggle="collapse"
+                       data-bs-target="#details-{{ loop.index }}"
+                       aria-expanded="false"
+                       aria-controls="details-{{ loop.index }}"
+                    >
+                        Voir plus
+                    </a>
+                {% endif %}
+            </td>
+        </tr>
+        {% if operation.metadata is not empty %}
+            <tr class="border-0">
+                <td colspan="4" class="p-0 border-0">
+                    <div id="details-{{ loop.index }}" class="p-0 collapse">
+                        {% include 'preview/_cfonb_row-detail-table.html.twig' with({metadata: operation.metadata}) %}
+                    </div>
+                </td>
+            </tr>
+        {% endif %}
+    {% endfor %}
+    <tr>
+        <td>{{ data.newBalance.date ? data.newBalance.date|format_date('short') }}</td>
+        <td>{{ data.newBalance.amount is not same as(null) ? data.newBalance.amount|format_currency('EUR') }}</td>
+        <td colspan="2">Solde final</td>
+    </tr>
+    </tbody>
+</table>
