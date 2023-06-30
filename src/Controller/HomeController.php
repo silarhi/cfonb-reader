@@ -1,10 +1,16 @@
 <?php
 
+/*
+ * This file is part of CFONB Reader.
+ * Copyright (c) 2023 - present SILARHI - All Rights Reserved
+ * Unauthorized copying of this file, via any medium is strictly prohibited
+ * Proprietary and confidential
+ * Developed by SILARHI <dev@silarhi.fr>
+ */
+
 namespace App\Controller;
 
 use App\Form\CfonbFileType;
-use Psr\Cache\CacheItemInterface;
-use Psr\Cache\CacheItemPoolInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\File\UploadedFile;
 use Symfony\Component\HttpFoundation\Request;
@@ -21,9 +27,9 @@ class HomeController extends AbstractController
         $form = $this->createForm(CfonbFileType::class);
         $form->handleRequest($request);
 
-        if($form->isSubmitted() && $form->isValid()) {
+        if ($form->isSubmitted() && $form->isValid()) {
             $fileId = uniqid();
-            $cache->get($fileId, function(ItemInterface $item) use ($form) {
+            $cache->get($fileId, function (ItemInterface $item) use ($form) {
                 $item->expiresAfter(3600);
 
                 /** @var UploadedFile $file */
@@ -46,8 +52,8 @@ class HomeController extends AbstractController
     #[Route('/{fileId}', name: 'app_preview')]
     public function test(string $fileId, CacheInterface $cache): Response
     {
-        $file = $cache->get($fileId, fn() => null);
-        if(null === $file) {
+        $file = $cache->get($fileId, fn () => null);
+        if (null === $file) {
             $this->addFlash('error', 'Le fichier déposé a expiré');
 
             return $this->redirectToRoute('app_home', status: Response::HTTP_SEE_OTHER);
