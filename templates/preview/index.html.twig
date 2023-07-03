@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Visualisation{% endblock %}
+
+{% block body %}
+    <div class="container py-5">
+        <div class="d-flex justify-content-between mb-3">
+            <a href="{{ path('app_home') }}" class="btn">
+                <i class="icon fa fa-chevron-left"></i>
+                Retour
+            </a>
+            <a href="{{ path('app_export_csv', {'id' : id}) }}" class="btn btn-primary">
+                <i class="icon fa fa-download"></i>
+                Exporter en CSV
+            </a>
+        </div>
+        <div class="card">
+            <div class="table-responsive">
+                {% if type == constant('App\\Cfonb\\CfonbManager::TYPE_120') %}
+                    {% include 'preview/_cfonb-120-table.html.twig' %}
+                {% elseif type == constant('App\\Cfonb\\CfonbManager::TYPE_240')  %}
+                    {% include 'preview/_cfonb-240-table.html.twig' %}
+                {% endif %}
+            </div>
+        </div>
+    </div>
+{% endblock %}

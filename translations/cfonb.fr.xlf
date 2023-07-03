@@ -1,0 +1,899 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0" srcLang="fr" trgLang="fr">
+  <file id="cfonb.fr">
+    <unit id="Z6K4KvD" name="cfonb.codes.01">
+      <segment>
+        <source>cfonb.codes.01</source>
+        <target>Chèques payés</target>
+      </segment>
+    </unit>
+    <unit id="OkgvtwZ" name="cfonb.codes.02">
+      <segment>
+        <source>cfonb.codes.02</source>
+        <target>Remises de chèques</target>
+      </segment>
+    </unit>
+    <unit id="Rc4xmRq" name="cfonb.codes.03">
+      <segment>
+        <source>cfonb.codes.03</source>
+        <target>Chèques impayés</target>
+      </segment>
+    </unit>
+    <unit id="eEtrRUg" name="cfonb.codes.04">
+      <segment>
+        <source>cfonb.codes.04</source>
+        <target>Versements espèces</target>
+      </segment>
+    </unit>
+    <unit id="mO8Izyl" name="cfonb.codes.05">
+      <segment>
+        <source>cfonb.codes.05</source>
+        <target>Virements reçus</target>
+      </segment>
+    </unit>
+    <unit id="i1IWfGK" name="cfonb.codes.06">
+      <segment>
+        <source>cfonb.codes.06</source>
+        <target>Virements émis</target>
+      </segment>
+    </unit>
+    <unit id=".QQ73U8" name="cfonb.codes.07">
+      <segment>
+        <source>cfonb.codes.07</source>
+        <target>LCR/BOR domiciliés</target>
+      </segment>
+    </unit>
+    <unit id="pPGuvP." name="cfonb.codes.08">
+      <segment>
+        <source>cfonb.codes.08</source>
+        <target>Prélèvements, TIP et Télérèglements domiciliés</target>
+      </segment>
+    </unit>
+    <unit id="MYNUJbv" name="cfonb.codes.09">
+      <segment>
+        <source>cfonb.codes.09</source>
+        <target>Prélèvements, TIP et Télérèglements émis</target>
+      </segment>
+    </unit>
+    <unit id="4yOz8EY" name="cfonb.codes.10">
+      <segment>
+        <source>cfonb.codes.10</source>
+        <target>Prélèvements, TIP et Télérèglements rejetés/impayés</target>
+      </segment>
+    </unit>
+    <unit id="f8pt0bI" name="cfonb.codes.11">
+      <segment>
+        <source>cfonb.codes.11</source>
+        <target>Factures cartes de paiement/DAB-GAB</target>
+      </segment>
+    </unit>
+    <unit id="ktmaWuz" name="cfonb.codes.12">
+      <segment>
+        <source>cfonb.codes.12</source>
+        <target>Rejet/retour de virement</target>
+      </segment>
+    </unit>
+    <unit id="oQ0xmt." name="cfonb.codes.13">
+      <segment>
+        <source>cfonb.codes.13</source>
+        <target>Virements de trésorerie reçus</target>
+      </segment>
+    </unit>
+    <unit id="yvTRt57" name="cfonb.codes.14">
+      <segment>
+        <source>cfonb.codes.14</source>
+        <target>Virements de trésorerie émis</target>
+      </segment>
+    </unit>
+    <unit id="l_uO64G" name="cfonb.codes.15">
+      <segment>
+        <source>cfonb.codes.15</source>
+        <target>Remises de chèques sur caisse</target>
+      </segment>
+    </unit>
+    <unit id="a5HM3HM" name="cfonb.codes.18">
+      <segment>
+        <source>cfonb.codes.18</source>
+        <target>Autres virements reçus</target>
+      </segment>
+    </unit>
+    <unit id="1xXbyVB" name="cfonb.codes.21">
+      <segment>
+        <source>cfonb.codes.21</source>
+        <target>Autres virements émis</target>
+      </segment>
+    </unit>
+    <unit id="YvACa35" name="cfonb.codes.22">
+      <segment>
+        <source>cfonb.codes.22</source>
+        <target>TIP domiciliés</target>
+      </segment>
+    </unit>
+    <unit id="oc11ScD" name="cfonb.codes.24">
+      <segment>
+        <source>cfonb.codes.24</source>
+        <target>TIP émis</target>
+      </segment>
+    </unit>
+    <unit id="x3qsYBh" name="cfonb.codes.26">
+      <segment>
+        <source>cfonb.codes.26</source>
+        <target>TIP rejetés / impayés</target>
+      </segment>
+    </unit>
+    <unit id="wdPonPo" name="cfonb.codes.27">
+      <segment>
+        <source>cfonb.codes.27</source>
+        <target>Prélèvements rejetés / impayés</target>
+      </segment>
+    </unit>
+    <unit id="Vwizj4k" name="cfonb.codes.28">
+      <segment>
+        <source>cfonb.codes.28</source>
+        <target>Factures cartes payées</target>
+      </segment>
+    </unit>
+    <unit id="v2Dy409" name="cfonb.codes.29">
+      <segment>
+        <source>cfonb.codes.29</source>
+        <target>Retrait DAB-GAB</target>
+      </segment>
+    </unit>
+    <unit id="lmqz9zU" name="cfonb.codes.30">
+      <segment>
+        <source>cfonb.codes.30</source>
+        <target>Factures cartes remises</target>
+      </segment>
+    </unit>
+    <unit id="j7k5aR3" name="cfonb.codes.31">
+      <segment>
+        <source>cfonb.codes.31</source>
+        <target>Remises d'effets à l'encaissement</target>
+      </segment>
+    </unit>
+    <unit id="GSw_gFg" name="cfonb.codes.32">
+      <segment>
+        <source>cfonb.codes.32</source>
+        <target>Remises à l'escompte (papier commercial / chèques)</target>
+      </segment>
+    </unit>
+    <unit id="0NU9R06" name="cfonb.codes.33">
+      <segment>
+        <source>cfonb.codes.33</source>
+        <target>Effets impayés</target>
+      </segment>
+    </unit>
+    <unit id="Ps4Bup5" name="cfonb.codes.34">
+      <segment>
+        <source>cfonb.codes.34</source>
+        <target>Incidents sur effets</target>
+      </segment>
+    </unit>
+    <unit id="5BOlV97" name="cfonb.codes.35">
+      <segment>
+        <source>cfonb.codes.35</source>
+        <target>Remises de LCR/BOR à l'encaissement</target>
+      </segment>
+    </unit>
+    <unit id="mMf2Eew" name="cfonb.codes.36">
+      <segment>
+        <source>cfonb.codes.36</source>
+        <target>Remise de facture CB crédit</target>
+      </segment>
+    </unit>
+    <unit id="VZxsudB" name="cfonb.codes.37">
+      <segment>
+        <source>cfonb.codes.37</source>
+        <target>Remises de LCR/BOR à l'escompte</target>
+      </segment>
+    </unit>
+    <unit id="qGJNwBJ" name="cfonb.codes.38">
+      <segment>
+        <source>cfonb.codes.38</source>
+        <target>Facture CB impayée / rejetée</target>
+      </segment>
+    </unit>
+    <unit id="7PleTho" name="cfonb.codes.39">
+      <segment>
+        <source>cfonb.codes.39</source>
+        <target>Virements d'Origine Extérieur (VOE) reçus</target>
+      </segment>
+    </unit>
+    <unit id="8iAtp_F" name="cfonb.codes.41">
+      <segment>
+        <source>cfonb.codes.41</source>
+        <target>Transferts vers/en provenance de l'étranger</target>
+      </segment>
+    </unit>
+    <unit id="zV7UCI5" name="cfonb.codes.42">
+      <segment>
+        <source>cfonb.codes.42</source>
+        <target>Achats/Ventes de devises</target>
+      </segment>
+    </unit>
+    <unit id="z2rAKVs" name="cfonb.codes.43">
+      <segment>
+        <source>cfonb.codes.43</source>
+        <target>Autres opérations avec l'étranger</target>
+      </segment>
+    </unit>
+    <unit id="Kt2o2Qt" name="cfonb.codes.44">
+      <segment>
+        <source>cfonb.codes.44</source>
+        <target>Virements internationaux émis</target>
+      </segment>
+    </unit>
+    <unit id="05I7kMg" name="cfonb.codes.45">
+      <segment>
+        <source>cfonb.codes.45</source>
+        <target>Virements internationaux reçus</target>
+      </segment>
+    </unit>
+    <unit id="pxEfTdI" name="cfonb.codes.46">
+      <segment>
+        <source>cfonb.codes.46</source>
+        <target>Achats de devises au comptant</target>
+      </segment>
+    </unit>
+    <unit id="pA0hhCe" name="cfonb.codes.47">
+      <segment>
+        <source>cfonb.codes.47</source>
+        <target>Ventes de devises au comptant</target>
+      </segment>
+    </unit>
+    <unit id="f_nGNkH" name="cfonb.codes.48">
+      <segment>
+        <source>cfonb.codes.48</source>
+        <target>Levée sur achat à terme</target>
+      </segment>
+    </unit>
+    <unit id="0VXVDxi" name="cfonb.codes.49">
+      <segment>
+        <source>cfonb.codes.49</source>
+        <target>Livraisons sur vente à terme</target>
+      </segment>
+    </unit>
+    <unit id="N9NkFKD" name="cfonb.codes.51">
+      <segment>
+        <source>cfonb.codes.51</source>
+        <target>Achats et Ventes de titres</target>
+      </segment>
+    </unit>
+    <unit id="0GQBne_" name="cfonb.codes.52">
+      <segment>
+        <source>cfonb.codes.52</source>
+        <target>Diverses opérations sur titres</target>
+      </segment>
+    </unit>
+    <unit id="uWdjQBw" name="cfonb.codes.53">
+      <segment>
+        <source>cfonb.codes.53</source>
+        <target>Achats/Souscriptions VM/BF</target>
+      </segment>
+    </unit>
+    <unit id="igzsKf_" name="cfonb.codes.54">
+      <segment>
+        <source>cfonb.codes.54</source>
+        <target>Ventes de VM/BF</target>
+      </segment>
+    </unit>
+    <unit id="bb7aBrh" name="cfonb.codes.55">
+      <segment>
+        <source>cfonb.codes.55</source>
+        <target>Solde de liquidation - BF</target>
+      </segment>
+    </unit>
+    <unit id="yBvenyq" name="cfonb.codes.56">
+      <segment>
+        <source>cfonb.codes.56</source>
+        <target>Achats OPCVM</target>
+      </segment>
+    </unit>
+    <unit id="3ntw1zV" name="cfonb.codes.57">
+      <segment>
+        <source>cfonb.codes.57</source>
+        <target>Ventes OPCVM</target>
+      </segment>
+    </unit>
+    <unit id="tpjaODR" name="cfonb.codes.58">
+      <segment>
+        <source>cfonb.codes.58</source>
+        <target>Achats TCN</target>
+      </segment>
+    </unit>
+    <unit id="eqzrp6S" name="cfonb.codes.59">
+      <segment>
+        <source>cfonb.codes.59</source>
+        <target>Ventes TCN</target>
+      </segment>
+    </unit>
+    <unit id="73hPCN6" name="cfonb.codes.61">
+      <segment>
+        <source>cfonb.codes.61</source>
+        <target>Agios</target>
+      </segment>
+    </unit>
+    <unit id="kglAUww" name="cfonb.codes.62">
+      <segment>
+        <source>cfonb.codes.62</source>
+        <target>Commissions et frais divers, dont intérêts compensatoires</target>
+      </segment>
+    </unit>
+    <unit id="IdxsOVc" name="cfonb.codes.63">
+      <segment>
+        <source>cfonb.codes.63</source>
+        <target>Produits financiers</target>
+      </segment>
+    </unit>
+    <unit id="i8AiqLD" name="cfonb.codes.64">
+      <segment>
+        <source>cfonb.codes.64</source>
+        <target>Commissions y compris taxes</target>
+      </segment>
+    </unit>
+    <unit id="Me.zcBs" name="cfonb.codes.65">
+      <segment>
+        <source>cfonb.codes.65</source>
+        <target>Commissions hors taxes</target>
+      </segment>
+    </unit>
+    <unit id="TG5jPHA" name="cfonb.codes.66">
+      <segment>
+        <source>cfonb.codes.66</source>
+        <target>Commissions non taxables</target>
+      </segment>
+    </unit>
+    <unit id="tMv6I__" name="cfonb.codes.67">
+      <segment>
+        <source>cfonb.codes.67</source>
+        <target>Taxes</target>
+      </segment>
+    </unit>
+    <unit id="Tnv8xgF" name="cfonb.codes.68">
+      <segment>
+        <source>cfonb.codes.68</source>
+        <target>Autres opérations avec l'étranger - Débit</target>
+      </segment>
+    </unit>
+    <unit id="5Zikr3T" name="cfonb.codes.69">
+      <segment>
+        <source>cfonb.codes.69</source>
+        <target>Autres opérations avec l'étranger - Crédit</target>
+      </segment>
+    </unit>
+    <unit id="5v.fKt5" name="cfonb.codes.70">
+      <segment>
+        <source>cfonb.codes.70</source>
+        <target>Charges financières</target>
+      </segment>
+    </unit>
+    <unit id="N2KwLQV" name="cfonb.codes.71">
+      <segment>
+        <source>cfonb.codes.71</source>
+        <target>Tirage de crédits</target>
+      </segment>
+    </unit>
+    <unit id="0PMv4r5" name="cfonb.codes.72">
+      <segment>
+        <source>cfonb.codes.72</source>
+        <target>Echéance crédits</target>
+      </segment>
+    </unit>
+    <unit id="EI4Tqel" name="cfonb.codes.73">
+      <segment>
+        <source>cfonb.codes.73</source>
+        <target>Emission de valeurs mobilières</target>
+      </segment>
+    </unit>
+    <unit id="vMEuuj8" name="cfonb.codes.74">
+      <segment>
+        <source>cfonb.codes.74</source>
+        <target>Emission de titres de créances</target>
+      </segment>
+    </unit>
+    <unit id="77kX513" name="cfonb.codes.75">
+      <segment>
+        <source>cfonb.codes.75</source>
+        <target>Remboursement</target>
+      </segment>
+    </unit>
+    <unit id="9CcGJno" name="cfonb.codes.76">
+      <segment>
+        <source>cfonb.codes.76</source>
+        <target>Dépôt à terme</target>
+      </segment>
+    </unit>
+    <unit id="MfCUk59" name="cfonb.codes.77">
+      <segment>
+        <source>cfonb.codes.77</source>
+        <target>Echéance dépôt à terme</target>
+      </segment>
+    </unit>
+    <unit id="DcaB8G7" name="cfonb.codes.80">
+      <segment>
+        <source>cfonb.codes.80</source>
+        <target>Achats autres TC</target>
+      </segment>
+    </unit>
+    <unit id="06Jt6Pm" name="cfonb.codes.81">
+      <segment>
+        <source>cfonb.codes.81</source>
+        <target>Ventes autres TC</target>
+      </segment>
+    </unit>
+    <unit id="5acOqlJ" name="cfonb.codes.82">
+      <segment>
+        <source>cfonb.codes.82</source>
+        <target>Contrats</target>
+      </segment>
+    </unit>
+    <unit id="bGG4KGq" name="cfonb.codes.83">
+      <segment>
+        <source>cfonb.codes.83</source>
+        <target>Options</target>
+      </segment>
+    </unit>
+    <unit id="twlQDcA" name="cfonb.codes.84">
+      <segment>
+        <source>cfonb.codes.84</source>
+        <target>Achats Bourses Etrangères</target>
+      </segment>
+    </unit>
+    <unit id="Asc572S" name="cfonb.codes.85">
+      <segment>
+        <source>cfonb.codes.85</source>
+        <target>Ventes Bourses Etrangères</target>
+      </segment>
+    </unit>
+    <unit id="E3QQm0t" name="cfonb.codes.86">
+      <segment>
+        <source>cfonb.codes.86</source>
+        <target>Opérations sur titres</target>
+      </segment>
+    </unit>
+    <unit id="K.m_.d2" name="cfonb.codes.87">
+      <segment>
+        <source>cfonb.codes.87</source>
+        <target>Revenus sur titres</target>
+      </segment>
+    </unit>
+    <unit id="JbeyD8j" name="cfonb.codes.88">
+      <segment>
+        <source>cfonb.codes.88</source>
+        <target>Commissions et droits de garde</target>
+      </segment>
+    </unit>
+    <unit id="JOoXIWA" name="cfonb.codes.89">
+      <segment>
+        <source>cfonb.codes.89</source>
+        <target>Remboursement impôts étrangers</target>
+      </segment>
+    </unit>
+    <unit id="M5g13nz" name="cfonb.codes.90">
+      <segment>
+        <source>cfonb.codes.90</source>
+        <target>Facture Acceptée à Echéance émise</target>
+      </segment>
+    </unit>
+    <unit id="w.DUt.L" name="cfonb.codes.91">
+      <segment>
+        <source>cfonb.codes.91</source>
+        <target>Opérations diverses</target>
+      </segment>
+    </unit>
+    <unit id="XuUcdsm" name="cfonb.codes.92">
+      <segment>
+        <source>cfonb.codes.92</source>
+        <target>Centralisation de recettes</target>
+      </segment>
+    </unit>
+    <unit id="FihHxhJ" name="cfonb.codes.93">
+      <segment>
+        <source>cfonb.codes.93</source>
+        <target>Centralisation de dépenses</target>
+      </segment>
+    </unit>
+    <unit id="zROQwYN" name="cfonb.codes.94">
+      <segment>
+        <source>cfonb.codes.94</source>
+        <target>Centralisation de trésorerie - Crédit</target>
+      </segment>
+    </unit>
+    <unit id="dhN1AOG" name="cfonb.codes.95">
+      <segment>
+        <source>cfonb.codes.95</source>
+        <target>Centralisation de trésorerie - Débit</target>
+      </segment>
+    </unit>
+    <unit id="GMmo302" name="cfonb.codes.96">
+      <segment>
+        <source>cfonb.codes.96</source>
+        <target>Télérèglements domiciliés</target>
+      </segment>
+    </unit>
+    <unit id="ga2NlUN" name="cfonb.codes.97">
+      <segment>
+        <source>cfonb.codes.97</source>
+        <target>Télérèglements émis</target>
+      </segment>
+    </unit>
+    <unit id="96TiCS2" name="cfonb.codes.98">
+      <segment>
+        <source>cfonb.codes.98</source>
+        <target>Télérèglements rejetés/impayés</target>
+      </segment>
+    </unit>
+    <unit id="T8qZRTe" name="cfonb.codes.99">
+      <segment>
+        <source>cfonb.codes.99</source>
+        <target>Annulations et régularisations</target>
+      </segment>
+    </unit>
+    <unit id="0L_H25r" name="cfonb.codes.A1">
+      <segment>
+        <source>cfonb.codes.A1</source>
+        <target>Prélèvements SEPA émis</target>
+      </segment>
+    </unit>
+    <unit id="5lxOBHy" name="cfonb.codes.A2">
+      <segment>
+        <source>cfonb.codes.A2</source>
+        <target>Prélèvements SEPA interentreprises émis</target>
+      </segment>
+    </unit>
+    <unit id="UID02sT" name="cfonb.codes.A3">
+      <segment>
+        <source>cfonb.codes.A3</source>
+        <target>Prélèvements SEPA rejetés/impayés (émis par le débiteur ou sa banque)</target>
+      </segment>
+    </unit>
+    <unit id="fzhDr1r" name="cfonb.codes.A4">
+      <segment>
+        <source>cfonb.codes.A4</source>
+        <target>Prélèvements SEPA interentreprises rejetés/impayés (émis par le débiteur ou sa banque)</target>
+      </segment>
+    </unit>
+    <unit id="V62Mxjj" name="cfonb.codes.A5">
+      <segment>
+        <source>cfonb.codes.A5</source>
+        <target>Prélèvements SEPA interentreprises – reversements émis (par le créancier ou sa banque)</target>
+      </segment>
+    </unit>
+    <unit id="mibxXlA" name="cfonb.codes.A6">
+      <segment>
+        <source>cfonb.codes.A6</source>
+        <target>Prélèvements SEPA interentreprises – reversements émis (par le créancier ou sa banque)</target>
+      </segment>
+    </unit>
+    <unit id="kPOmLdS" name="cfonb.codes.B1">
+      <segment>
+        <source>cfonb.codes.B1</source>
+        <target>Prélèvements SEPA domiciliés</target>
+      </segment>
+    </unit>
+    <unit id="hCSwH3m" name="cfonb.codes.B2">
+      <segment>
+        <source>cfonb.codes.B2</source>
+        <target>Prélèvements SEPA interentreprises domiciliés</target>
+      </segment>
+    </unit>
+    <unit id="CfoHb5s" name="cfonb.codes.B3">
+      <segment>
+        <source>cfonb.codes.B3</source>
+        <target>Prélèvements SEPA rejetés/impayés reçus (par le créancier)</target>
+      </segment>
+    </unit>
+    <unit id="C2f.6ia" name="cfonb.codes.B4">
+      <segment>
+        <source>cfonb.codes.B4</source>
+        <target>Prélèvements SEPA interentreprises rejetés/impayés reçus (par le créancier)</target>
+      </segment>
+    </unit>
+    <unit id="rzaE8aj" name="cfonb.codes.B5">
+      <segment>
+        <source>cfonb.codes.B5</source>
+        <target>Prélèvements SEPA – reversements reçus (par le débiteur)</target>
+      </segment>
+    </unit>
+    <unit id="tAJSPmN" name="cfonb.codes.B6">
+      <segment>
+        <source>cfonb.codes.B6</source>
+        <target>Prélèvements SEPA interentreprises – reversements reçus (par le débiteur)</target>
+      </segment>
+    </unit>
+    <unit id="D..9QA6" name="cfonb.codes.C1">
+      <segment>
+        <source>cfonb.codes.C1</source>
+        <target>Virement SEPA instantané émis</target>
+      </segment>
+    </unit>
+    <unit id="mjl67.X" name="cfonb.codes.C2">
+      <segment>
+        <source>cfonb.codes.C2</source>
+        <target>Virement SEPA instantané reçu</target>
+      </segment>
+    </unit>
+    <unit id="LQ4NG.I" name="cfonb.codes.C3">
+      <segment>
+        <source>cfonb.codes.C3</source>
+        <target>Crédit suite à demande de retour de fonds (« recall ») d’un virement SEPA instantané émise (par le donneur d’ordre)</target>
+      </segment>
+    </unit>
+    <unit id="AbfUUrl" name="cfonb.codes.C4">
+      <segment>
+        <source>cfonb.codes.C4</source>
+        <target>Débit suite à demande de retour de fonds (« recall ») d’un virement SEPA instantané reçue (par le bénéficiaire)</target>
+      </segment>
+    </unit>
+    <unit id="ihHkI0T" name="cfonb.codes.C5">
+      <segment>
+        <source>cfonb.codes.C5</source>
+        <target>Recrédit du Donneur d’Ordre</target>
+      </segment>
+    </unit>
+    <unit id="2FenxFo" name="cfonb.qualifier.MMO.1">
+      <segment>
+        <source>cfonb.qualifier.MMO.1</source>
+        <target>Code devise ISO du montant d'Origine</target>
+      </segment>
+    </unit>
+    <unit id="uQQQ2.I" name="cfonb.qualifier.MMO.2">
+      <segment>
+        <source>cfonb.qualifier.MMO.2</source>
+        <target>Nombre de décimales du montant d'Origine</target>
+      </segment>
+    </unit>
+    <unit id="U_Q.rrr" name="cfonb.qualifier.MMO.3">
+      <segment>
+        <source>cfonb.qualifier.MMO.3</source>
+        <target>Montant d'Origine (non signé)</target>
+      </segment>
+    </unit>
+    <unit id="MDcwIeO" name="cfonb.qualifier.MMO.4">
+      <segment>
+        <source>cfonb.qualifier.MMO.4</source>
+        <target>Nombre de décimales du Taux de Change</target>
+      </segment>
+    </unit>
+    <unit id="CPrKNfY" name="cfonb.qualifier.MMO.5">
+      <segment>
+        <source>cfonb.qualifier.MMO.5</source>
+        <target>Taux de Change</target>
+      </segment>
+    </unit>
+    <unit id="P9N9Ypi" name="cfonb.qualifier.MMO.6">
+      <segment>
+        <source>cfonb.qualifier.MMO.6</source>
+        <target>Zone réservée</target>
+      </segment>
+    </unit>
+    <unit id="1pAvp7F" name="cfonb.qualifier.NPY.1">
+      <segment>
+        <source>cfonb.qualifier.NPY.1</source>
+        <target>Nom du Payeur</target>
+      </segment>
+    </unit>
+    <unit id="kYeXBMO" name="cfonb.qualifier.IPY.1">
+      <segment>
+        <source>cfonb.qualifier.IPY.1</source>
+        <target>Identifiant du Payeur</target>
+      </segment>
+    </unit>
+    <unit id="0JRysVX" name="cfonb.qualifier.IPY.2">
+      <segment>
+        <source>cfonb.qualifier.IPY.2</source>
+        <target>Type d'identifiant du Payeur</target>
+      </segment>
+    </unit>
+    <unit id="MSBuiq8" name="cfonb.qualifier.NBE.1">
+      <segment>
+        <source>cfonb.qualifier.NBE.1</source>
+        <target>Nom du Bénéficiaire</target>
+      </segment>
+    </unit>
+    <unit id="Wfa13gE" name="cfonb.qualifier.IBE.1">
+      <segment>
+        <source>cfonb.qualifier.IBE.1</source>
+        <target>Identifiant du Bénéficiaire</target>
+      </segment>
+    </unit>
+    <unit id="s31kSvO" name="cfonb.qualifier.IBE.2">
+      <segment>
+        <source>cfonb.qualifier.IBE.2</source>
+        <target>Type d'Identifiant du Bénéficiaire</target>
+      </segment>
+    </unit>
+    <unit id="jEbwlY." name="cfonb.qualifier.NPO.1">
+      <segment>
+        <source>cfonb.qualifier.NPO.1</source>
+        <target>Nom de l' "Ultimate Debtor"</target>
+      </segment>
+    </unit>
+    <unit id="BJGw.Iw" name="cfonb.qualifier.IPO.1">
+      <segment>
+        <source>cfonb.qualifier.IPO.1</source>
+        <target>Identifiant de l' "Ultimate Debtor"</target>
+      </segment>
+    </unit>
+    <unit id="rir6Kh." name="cfonb.qualifier.IPO.2">
+      <segment>
+        <source>cfonb.qualifier.IPO.2</source>
+        <target>Type d'Identifiant de l' "Ultimate Debtor"</target>
+      </segment>
+    </unit>
+    <unit id="qa7qvxU" name="cfonb.qualifier.NBU.1">
+      <segment>
+        <source>cfonb.qualifier.NBU.1</source>
+        <target>Nom de l' "Ultimate Creditor"</target>
+      </segment>
+    </unit>
+    <unit id="YnPUPn4" name="cfonb.qualifier.IBU.1">
+      <segment>
+        <source>cfonb.qualifier.IBU.1</source>
+        <target>Identifiant de l' "Ultimate Creditor"</target>
+      </segment>
+    </unit>
+    <unit id="PGbeqRO" name="cfonb.qualifier.IBU.2">
+      <segment>
+        <source>cfonb.qualifier.IBU.2</source>
+        <target>Type d'Identifiant de l' "Ultimate Creditor"</target>
+      </segment>
+    </unit>
+    <unit id="yua.WLp" name="cfonb.qualifier.LCC.1">
+      <segment>
+        <source>cfonb.qualifier.LCC.1</source>
+        <target>Libellé de Client à Client Ligne 1</target>
+      </segment>
+    </unit>
+    <unit id="9_Cj906" name="cfonb.qualifier.LC2.1">
+      <segment>
+        <source>cfonb.qualifier.LC2.1</source>
+        <target>Libellé de Client à Client Ligne 2</target>
+      </segment>
+    </unit>
+    <unit id="lXCYAUO" name="cfonb.qualifier.LCS.1">
+      <segment>
+        <source>cfonb.qualifier.LCS.1</source>
+        <target>Libellé de Client à Client structuré</target>
+      </segment>
+    </unit>
+    <unit id="MCUH6yc" name="cfonb.qualifier.RCN.1">
+      <segment>
+        <source>cfonb.qualifier.RCN.1</source>
+        <target>Référence de Client à Client</target>
+      </segment>
+    </unit>
+    <unit id="t5wAgbX" name="cfonb.qualifier.RCN.2">
+      <segment>
+        <source>cfonb.qualifier.RCN.2</source>
+        <target>Nature du Paiement</target>
+      </segment>
+    </unit>
+    <unit id="uoNNR0B" name="cfonb.qualifier.REF.1">
+      <segment>
+        <source>cfonb.qualifier.REF.1</source>
+        <target>Référence de la Remise</target>
+      </segment>
+    </unit>
+    <unit id="7NzImy4" name="cfonb.qualifier.REF.2">
+      <segment>
+        <source>cfonb.qualifier.REF.2</source>
+        <target>Référence de la Transaction</target>
+      </segment>
+    </unit>
+    <unit id="i60wdqg" name="cfonb.qualifier.CBE.1">
+      <segment>
+        <source>cfonb.qualifier.CBE.1</source>
+        <target>Compte du bénéficiaire</target>
+      </segment>
+    </unit>
+    <unit id="tkadbLy" name="cfonb.qualifier.RUM.1">
+      <segment>
+        <source>cfonb.qualifier.RUM.1</source>
+        <target>Référence du mandat</target>
+      </segment>
+    </unit>
+    <unit id="eSoD1Fa" name="cfonb.qualifier.RUM.2">
+      <segment>
+        <source>cfonb.qualifier.RUM.2</source>
+        <target>Séquence de présentation</target>
+      </segment>
+    </unit>
+    <unit id="eldX_ao" name="cfonb.qualifier.CPY.1">
+      <segment>
+        <source>cfonb.qualifier.CPY.1</source>
+        <target>Compte débiteur</target>
+      </segment>
+    </unit>
+    <unit id="14p8eL_" name="cfonb.qualifier.LIB.1">
+      <segment>
+        <source>cfonb.qualifier.LIB.1</source>
+        <target>Libellé complémentaire</target>
+      </segment>
+    </unit>
+    <unit id="Aonlbd1" name="cfonb.qualifier.NOM.1">
+      <segment>
+        <source>cfonb.qualifier.NOM.1</source>
+        <target>Nom</target>
+      </segment>
+    </unit>
+    <unit id="x4qjdzx" name="transaction.sequenceNumber">
+      <segment>
+        <source>transaction.sequenceNumber</source>
+        <target>Numéro séquence</target>
+      </segment>
+    </unit>
+    <unit id="PQgJMlc" name="transaction.nationalIssuerNumber">
+      <segment>
+        <source>transaction.nationalIssuerNumber</source>
+        <target>Numéro émetteur national</target>
+      </segment>
+    </unit>
+    <unit id=".sUegI_" name="transaction.recipientName1">
+      <segment>
+        <source>transaction.recipientName1</source>
+        <target>Nom destinataire 1</target>
+      </segment>
+    </unit>
+    <unit id="G8DrVS9" name="transaction.recipientName2">
+      <segment>
+        <source>transaction.recipientName2</source>
+        <target>Nom destinataire 2</target>
+      </segment>
+    </unit>
+    <unit id="woENkSj" name="transaction.recipientAccountNumber">
+      <segment>
+        <source>transaction.recipientAccountNumber</source>
+        <target>Numéro compte destinataire</target>
+      </segment>
+    </unit>
+    <unit id="IY9Oons" name="transaction.recipientAccountNumber2">
+      <segment>
+        <source>transaction.recipientAccountNumber2</source>
+        <target>Numéro compte destinataire 2</target>
+      </segment>
+    </unit>
+    <unit id=".NngSwE" name="transaction.recipientBankCode1">
+      <segment>
+        <source>transaction.recipientBankCode1</source>
+        <target>Code banque destinataire 1</target>
+      </segment>
+    </unit>
+    <unit id="MIOWRAr" name="transaction.recipientBankCode2">
+      <segment>
+        <source>transaction.recipientBankCode2</source>
+        <target>Code banque destinataire 2</target>
+      </segment>
+    </unit>
+    <unit id="oP3EVYS" name="transaction.presenterReference">
+      <segment>
+        <source>transaction.presenterReference</source>
+        <target>Référence présentateur</target>
+      </segment>
+    </unit>
+    <unit id="R_6sJJU" name="transaction.curIndex">
+      <segment>
+        <source>transaction.curIndex</source>
+        <target>Indice actuel</target>
+      </segment>
+    </unit>
+    <unit id="FnmkyI1" name="transaction.initialTransactionSettlementDate">
+      <segment>
+        <source>transaction.initialTransactionSettlementDate</source>
+        <target>Date règlement transaction initiale</target>
+      </segment>
+    </unit>
+    <unit id="7SOOcvN" name="transaction.initialOperationPresenterReference">
+      <segment>
+        <source>transaction.initialOperationPresenterReference</source>
+        <target>Référence présentateur opération initiale</target>
+      </segment>
+    </unit>
+    <unit id="oEnleRH" name="transaction.operationCode">
+      <segment>
+        <source>transaction.operationCode</source>
+        <target>Code opération</target>
+      </segment>
+    </unit>
+  </file>
+</xliff>

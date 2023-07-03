@@ -31,7 +31,7 @@
     },
     "lint-staged": {
         "*.{js,css,scss,md}": "prettier --write",
-        "*.php": "php-cs-fixer fix --config=.php-cs-fixer.dist.php"
+        "*.php": "vendor/bin/php-cs-fixer fix --config=.php-cs-fixer.dist.php"
     },
     "dependencies": {
         "@fortawesome/fontawesome-free": "^6.4.0",

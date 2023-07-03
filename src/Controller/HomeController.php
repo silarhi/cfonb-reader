@@ -10,55 +10,124 @@
 
 namespace App\Controller;
 
+use App\Cfonb\CfonbManager;
+use App\Exception\DataNotFoundException;
+use App\Exception\DataNotReadableException;
+use App\Exporter\Cfonb120CsvExporter;
+use App\Exporter\Cfonb240CsvExporter;
 use App\Form\CfonbFileType;
+use App\Storage\DataStorageHandler;
+use DateTimeImmutable;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\BinaryFileResponse;
 use Symfony\Component\HttpFoundation\File\UploadedFile;
+use Symfony\Component\HttpFoundation\HeaderUtils;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
-use Symfony\Contracts\Cache\CacheInterface;
-use Symfony\Contracts\Cache\ItemInterface;
 
 class HomeController extends AbstractController
 {
     #[Route('/', name: 'app_home', methods: ['GET', 'POST'])]
-    public function index(Request $request, CacheInterface $cache): Response
+    public function index(Request $request, DataStorageHandler $dataStorageHandler): Response
     {
         $form = $this->createForm(CfonbFileType::class);
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
-            $fileId = uniqid();
-            $cache->get($fileId, function (ItemInterface $item) use ($form) {
-                $item->expiresAfter(3600);
+            /** @var UploadedFile $file */
+            $file = $form->get('file')->getData();
+            $data = [
+                'type' => $form->get('type')->getData(),
+                'content' => $file->getContent(),
+            ];
 
-                /** @var UploadedFile $file */
-                $file = $form->get('file')->getData();
-
-                return $file->getContent();
-            });
+            $id = $dataStorageHandler->store($data);
 
             return $this->redirectToRoute('app_preview', [
-                'fileId' => $fileId,
+                'id' => $id,
             ], Response::HTTP_SEE_OTHER);
         }
 
         return $this->render('home/index.html.twig', [
-            'controller_name' => 'HomeController',
             'form' => $form,
         ]);
     }
 
-    #[Route('/{fileId}', name: 'app_preview')]
-    public function test(string $fileId, CacheInterface $cache): Response
-    {
-        $file = $cache->get($fileId, fn () => null);
-        if (null === $file) {
-            $this->addFlash('error', 'Le fichier déposé a expiré');
+    #[Route('/{id}', name: 'app_preview')]
+    public function preview(
+        string $id,
+        DataStorageHandler $dataStorageHandler,
+        CfonbManager $cfonbManager,
+    ): Response {
+        try {
+            $data = $dataStorageHandler->get($id);
+        } catch (DataNotFoundException) {
+            $this->addFlash('error', "Le fichier déposé n'est plus disponible.");
 
             return $this->redirectToRoute('app_home', status: Response::HTTP_SEE_OTHER);
         }
 
-        return new Response('<html><body>Hello</body></html>');
+        $content = $data['content'];
+        $type = $data['type'] ?? $cfonbManager->guessTypeFromContent($content);
+
+        try {
+            $data = $cfonbManager->getData($content, $type);
+        } catch (DataNotReadableException) {
+            $this->addFlash('error', 'Le fichier déposé ne ressemble pas au format CFONB.');
+
+            return $this->redirectToRoute('app_home', status: Response::HTTP_SEE_OTHER);
+        }
+
+        return $this->render('preview/index.html.twig', [
+            'data' => $data,
+            'type' => $type,
+            'id' => $id,
+        ]);
+    }
+
+    #[Route('/{id}/export/csv', name: 'app_export_csv')]
+    public function exportCSV(
+        string $id,
+        DataStorageHandler $dataStorageHandler,
+        CfonbManager $cfonbManager,
+        Cfonb120CsvExporter $cfonb120CsvExporter,
+        Cfonb240CsvExporter $cfonb240CsvExporter
+    ): Response {
+        try {
+            $data = $dataStorageHandler->get($id);
+        } catch (DataNotFoundException) {
+            $this->addFlash('error', "Le fichier déposé n'est plus disponible.");
+
+            return $this->redirectToRoute('app_home', status: Response::HTTP_SEE_OTHER);
+        }
+
+        $content = $data['content'];
+        $type = $data['type'] ?? $cfonbManager->guessTypeFromContent($content);
+
+        try {
+            $data = $cfonbManager->getData($content, $type);
+        } catch (DataNotReadableException) {
+            $this->addFlash('error', 'Le fichier déposé ne ressemble pas au format CFONB.');
+
+            return $this->redirectToRoute('app_home', status: Response::HTTP_SEE_OTHER);
+        }
+
+        $tempFile = CfonbManager::TYPE_120 === $type
+            ? $cfonb120CsvExporter->export($data, $cfonbManager->getAllCfonb120Metadata())
+            : $cfonb240CsvExporter->export($data, $cfonbManager->getAllCfonb240Metadata());
+
+        $fileName = sprintf('%s_%s.csv', (new DateTimeImmutable())->format('YmdHis'), $type);
+
+        $response = new BinaryFileResponse($tempFile);
+        $disposition = HeaderUtils::makeDisposition(
+            HeaderUtils::DISPOSITION_ATTACHMENT,
+            $fileName
+        );
+
+        $response->headers->set('Content-Type', 'text/csv');
+        $response->headers->set('Content-Disposition', $disposition);
+
+        return $response;
     }
 }

@@ -1,0 +1,9 @@
+*.md
+.git
+.gitignore
+.idea
+node_modules
+var
+vendor
+public/bundles
+public/build
