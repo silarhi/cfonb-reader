@@ -1,8 +1,16 @@
 *.md
 .git
 .gitignore
+.github
+.husky
 .idea
+.php-cs-fixer.dist.php
+.prettierignore
+.prettierrc
+Dockerfile
 node_modules
+phpstan.neon
+rector.php
 var
 vendor
 public/bundles
