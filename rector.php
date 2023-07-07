@@ -24,6 +24,6 @@ return static function (RectorConfig $config): void {
     ]);
 
     $config->import(LevelSetList::UP_TO_PHP_81);
-    $config->import(SymfonyLevelSetList::UP_TO_SYMFONY_62);
+    $config->import(SymfonyLevelSetList::UP_TO_SYMFONY_63);
     $config->import(SetList::CODE_QUALITY);
 };
