@@ -20,10 +20,10 @@ use Symfony\Contracts\Translation\TranslatorInterface;
 
 class CfonbManager
 {
-    public const TYPE_120 = 'cfonb_120';
-    public const TYPE_240 = 'cfonb_240';
+    final public const TYPE_120 = 'cfonb_120';
+    final public const TYPE_240 = 'cfonb_240';
 
-    public function __construct(private TranslatorInterface $translator)
+    public function __construct(private readonly TranslatorInterface $translator)
     {
     }
 
