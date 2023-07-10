@@ -16,6 +16,7 @@ class Cfonb120CsvExporter extends AbstractCfonbCsvExporter
     {
         yield [
             'date' => $data['oldBalance']['date'] ?? null,
+            'amount' => $data['oldBalance']['amount'] ?? null,
             'debit' => isset($data['oldBalance']['amount']) && $data['oldBalance']['amount'] < 0.0 ? abs($data['oldBalance']['amount']) : null,
             'credit' => isset($data['oldBalance']['amount']) && $data['oldBalance']['amount'] >= 0.0 ? $data['oldBalance']['amount'] : null,
             'label' => 'Solde initial',
@@ -38,6 +39,7 @@ class Cfonb120CsvExporter extends AbstractCfonbCsvExporter
 
         yield [
             'date' => $data['newBalance']['date'] ?? null,
+            'amount' => $data['newBalance']['amount'] ?? null,
             'debit' => isset($data['newBalance']['amount']) && $data['newBalance']['amount'] < 0.0 ? abs($data['newBalance']['amount']) : null,
             'credit' => isset($data['newBalance']['amount']) && $data['newBalance']['amount'] >= 0.0 ? $data['newBalance']['amount'] : null,
             'label' => 'Solde final',
@@ -48,6 +50,7 @@ class Cfonb120CsvExporter extends AbstractCfonbCsvExporter
     {
         return [
             'date' => 'Date',
+            'amount' => 'Montant',
             'debit' => 'Débit',
             'credit' => 'Crédit',
             'label' => 'Libellé',

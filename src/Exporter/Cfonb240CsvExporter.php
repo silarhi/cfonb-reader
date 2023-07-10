@@ -17,6 +17,7 @@ class Cfonb240CsvExporter extends AbstractCfonbCsvExporter
         foreach ($data['transactions'] as $transaction) {
             yield [
                 'date' => $transaction['date'],
+                'amount' => $transaction['amount'] ?? null,
                 'debit' => $transaction['amount'] < 0.0 ? abs($transaction['amount']) : null,
                 'credit' => $transaction['amount'] >= 0.0 ? $transaction['amount'] : null,
                 'label' => $transaction['label'],
@@ -29,6 +30,7 @@ class Cfonb240CsvExporter extends AbstractCfonbCsvExporter
     {
         return [
             'date' => 'Date',
+            'amount' => 'Montant',
             'debit' => 'Débit',
             'credit' => 'Crédit',
             'label' => 'Libellé',
