@@ -40,7 +40,7 @@ class CfonbManager
         ];
 
         foreach ($lengthByTypes as $type => $length) {
-            if (0 === strlen($content) % $length) {
+            if (0 === strlen($content) % $length || "\n" === substr($content, $length, 1)) {
                 return $type;
             }
         }
