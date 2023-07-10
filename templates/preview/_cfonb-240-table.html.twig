@@ -12,7 +12,7 @@
     {% for transaction in data.transactions %}
         <tr>
             <td>{{ transaction.date|format_date('short') }}</td>
-            <td>{{ transaction.amount is not same as(null) and transaction.amount < 0 ? transaction.amount|format_currency('EUR') }}</td>
+            <td>{{ transaction.amount is not same as(null) and transaction.amount < 0 ? transaction.amount|abs|format_currency('EUR') }}</td>
             <td>{{ transaction.amount is not same as(null) and transaction.amount >= 0 ? transaction.amount|format_currency('EUR') }}</td>
             <td>{{ transaction.label }}</td>
             <td>

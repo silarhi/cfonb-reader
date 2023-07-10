@@ -18,7 +18,7 @@
     {% for operation in data.operations %}
         <tr>
             <td>{{ operation.date|format_date('short') }}</td>
-            <td>{{ operation.amount is not same as(null) and operation.amount < 0 ? operation.amount|format_currency('EUR') }}</td>
+            <td>{{ operation.amount is not same as(null) and operation.amount < 0 ? operation.amount|abs|format_currency('EUR') }}</td>
             <td>{{ operation.amount is not same as(null) and operation.amount >= 0 ? operation.amount|format_currency('EUR') }}</td>
             <td>{{ operation.label }}</td>
             <td>
