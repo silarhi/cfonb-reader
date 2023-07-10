@@ -29,7 +29,7 @@ class Cfonb120CsvExporter extends AbstractCfonbCsvExporter
             ];
             yield [
                 'date' => $operation['date'],
-                'debit' => $operation['amount'] < 0.0 ? $operation['amount'] : null,
+                'debit' => $operation['amount'] < 0.0 ? abs($operation['amount']) : null,
                 'credit' => $operation['amount'] >= 0.0 ? $operation['amount'] : null,
                 'label' => $operation['label'],
                 'fullLabel' => implode(' ', $labelParts),
