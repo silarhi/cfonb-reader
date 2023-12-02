@@ -25,7 +25,7 @@ class Cfonb120CsvExporter extends AbstractCfonbCsvExporter
         foreach ($data['operations'] as $operation) {
             $labelParts = [
                 $operation['label'],
-                ...array_map(fn (array $metadatum) => trim($metadatum['value']), $operation['metadata'] ?? []),
+                ...array_map(fn (array $metadatum) => trim((string) $metadatum['value']), $operation['metadata'] ?? []),
             ];
             yield [
                 'date' => $operation['date'],
@@ -33,7 +33,7 @@ class Cfonb120CsvExporter extends AbstractCfonbCsvExporter
                 'credit' => $operation['amount'] >= 0.0 ? $operation['amount'] : null,
                 'label' => $operation['label'],
                 'fullLabel' => implode(' ', $labelParts),
-                ...array_map(fn (array $metadatum) => trim($metadatum['value']), $operation['metadata'] ?? []),
+                ...array_map(fn (array $metadatum) => trim((string) $metadatum['value']), $operation['metadata'] ?? []),
             ];
         }
 

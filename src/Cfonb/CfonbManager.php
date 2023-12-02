@@ -48,7 +48,7 @@ class CfonbManager
         return null;
     }
 
-    public function getData(string $content, string $type): array
+    public function getData(string $content, string $type, bool $strict): array
     {
         $data = [];
         $reader = new CfonbReader();
@@ -56,10 +56,10 @@ class CfonbManager
         try {
             switch ($type) {
                 case self::TYPE_120:
-                    $data = $this->getCfonb120Data($content, $reader);
+                    $data = $this->getCfonb120Data($content, $reader, $strict);
                     break;
                 case self::TYPE_240:
-                    $data = $this->getCfonb240Data($content, $reader);
+                    $data = $this->getCfonb240Data($content, $reader, $strict);
                     break;
             }
         } catch (ParseException $e) {
@@ -83,7 +83,7 @@ class CfonbManager
         return $metadata;
     }
 
-    private function getCfonb120Data(string $content, CfonbReader $reader): array
+    private function getCfonb120Data(string $content, CfonbReader $reader, bool $strict): array
     {
         $content = str_replace("\r\n", "\n", $content);
 
@@ -92,7 +92,7 @@ class CfonbManager
             'operations' => [],
             'newBalance' => null,
         ];
-        foreach ($reader->parseCfonb120($content) as $statement) {
+        foreach ($reader->parseCfonb120($content, $strict) as $statement) {
             $data['oldBalance'] ??= [
                 'date' => $statement->getOldBalance()->getDate(),
                 'amount' => $statement->getOldBalance()->getAmount(),
@@ -115,13 +115,13 @@ class CfonbManager
         return $data;
     }
 
-    private function getCfonb240Data(string $content, CfonbReader $reader): array
+    private function getCfonb240Data(string $content, CfonbReader $reader, bool $strict): array
     {
         $data = [
             'transactions' => [],
         ];
 
-        foreach ($reader->parseCfonb240($content) as $transfer) {
+        foreach ($reader->parseCfonb240($content, $strict) as $transfer) {
             assert($transfer instanceof Transfer);
 
             foreach ($transfer->getTransactions() as $transaction) {
