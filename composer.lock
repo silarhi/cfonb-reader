@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d21f11ec4df619eaf76fa8faeba352f7",
+    "content-hash": "3eb27494fec005fa2a8d9177ef0c428d",
     "packages": [
         {
             "name": "monolog/monolog",
@@ -359,27 +359,27 @@
         },
         {
             "name": "silarhi/cfonb-parser",
-            "version": "4.1.0",
+            "version": "5.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/silarhi/cfonb-parser.git",
-                "reference": "28b58a06ffa207670b30dda8691ccd01a58e558a"
+                "reference": "d226bb84e315849554b0cc361668befea89f01f5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silarhi/cfonb-parser/zipball/28b58a06ffa207670b30dda8691ccd01a58e558a",
-                "reference": "28b58a06ffa207670b30dda8691ccd01a58e558a",
+                "url": "https://api.github.com/repos/silarhi/cfonb-parser/zipball/d226bb84e315849554b0cc361668befea89f01f5",
+                "reference": "d226bb84e315849554b0cc361668befea89f01f5",
                 "shasum": ""
             },
             "require": {
                 "php": "~8.1.0 || ~8.2.0 || ~8.3.0"
             },
             "require-dev": {
-                "friendsofphp/php-cs-fixer": "^3.26",
-                "phpstan/phpstan": "^1.10.34",
-                "phpunit/phpunit": "^10.3.4",
+                "friendsofphp/php-cs-fixer": "^3.40",
+                "phpstan/phpstan": "^1.10.47",
+                "phpunit/phpunit": "^10.5.1",
                 "rector/rector": "^0.18",
-                "vimeo/psalm": "^5.15"
+                "vimeo/psalm": "^5.16"
             },
             "type": "library",
             "autoload": {
@@ -406,9 +406,9 @@
             ],
             "support": {
                 "issues": "https://github.com/silarhi/cfonb-parser/issues",
-                "source": "https://github.com/silarhi/cfonb-parser/tree/4.1.0"
+                "source": "https://github.com/silarhi/cfonb-parser/tree/5.0.0"
             },
-            "time": "2023-09-14T06:57:55+00:00"
+            "time": "2023-12-02T07:37:19+00:00"
         },
         {
             "name": "symfony/apache-pack",
