@@ -9,7 +9,7 @@
 .prettierrc
 Dockerfile
 node_modules
-phpstan.neon
+phpstan.dist.neon
 rector.php
 var
 vendor
