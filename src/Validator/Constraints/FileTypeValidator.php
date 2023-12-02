@@ -26,14 +26,15 @@ class FileTypeValidator extends ConstraintValidator
     }
 
     /**
-     * @param array{file: UploadedFile, type: string|null} $value
-     * @param FileType                                     $constraint
+     * @param array{file: UploadedFile, type: string|null, strict: bool|null} $value
+     * @param FileType                                                        $constraint
      */
     public function validate(mixed $value, Constraint $constraint): void
     {
         /** @var UploadedFile $file */
         $file = $value['file'];
         $type = $value['type'] ?? $this->cfonbManager->guessTypeFromContent($file->getContent());
+        $strict = $value['strict'] ?? false;
 
         if (null === $type) {
             $this
@@ -46,7 +47,7 @@ class FileTypeValidator extends ConstraintValidator
         }
 
         try {
-            $this->cfonbManager->getData($file->getContent(), $type);
+            $this->cfonbManager->getData($file->getContent(), $type, $strict);
         } catch (DataNotReadableException $exception) {
             $this->logger->info('CFONB data is not readable', [
                 'exception' => $exception,

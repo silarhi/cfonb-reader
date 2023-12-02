@@ -40,6 +40,7 @@ class HomeController extends AbstractController
             $data = [
                 'type' => $form->get('type')->getData(),
                 'content' => $file->getContent(),
+                'strict' => $form->get('strict')->getData(),
             ];
 
             $id = $dataStorageHandler->store($data);
@@ -70,9 +71,10 @@ class HomeController extends AbstractController
 
         $content = $data['content'];
         $type = $data['type'] ?? $cfonbManager->guessTypeFromContent($content);
+        $strict = $data['strict'] ?? false;
 
         try {
-            $data = $cfonbManager->getData($content, $type);
+            $data = $cfonbManager->getData($content, $type, $strict);
         } catch (DataNotReadableException) {
             $this->addFlash('error', 'Le fichier déposé ne ressemble pas au format CFONB.');
 
@@ -104,9 +106,10 @@ class HomeController extends AbstractController
 
         $content = $data['content'];
         $type = $data['type'] ?? $cfonbManager->guessTypeFromContent($content);
+        $strict = $data['strict'] ?? false;
 
         try {
-            $data = $cfonbManager->getData($content, $type);
+            $data = $cfonbManager->getData($content, $type, $strict);
         } catch (DataNotReadableException) {
             $this->addFlash('error', 'Le fichier déposé ne ressemble pas au format CFONB.');
 

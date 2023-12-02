@@ -13,6 +13,7 @@ namespace App\Form;
 use App\Cfonb\CfonbManager;
 use App\Validator\Constraints\FileType;
 use Symfony\Component\Form\AbstractType;
+use Symfony\Component\Form\Extension\Core\Type\CheckboxType;
 use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
@@ -45,6 +46,13 @@ class CfonbFileType extends AbstractType
                 ],
                 'attr' => [
                     'placeholder' => 'Glissez ou déposez votre fichier CFONB (120 ou 240)',
+                ],
+            ])
+            ->add('strict', CheckboxType::class, [
+                'label' => 'Mode strict',
+                'required' => false,
+                'label_attr' => [
+                    'class' => 'checkbox-switch',
                 ],
             ])
         ;
