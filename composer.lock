@@ -359,27 +359,27 @@
         },
         {
             "name": "silarhi/cfonb-parser",
-            "version": "5.0.0",
+            "version": "5.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/silarhi/cfonb-parser.git",
-                "reference": "d226bb84e315849554b0cc361668befea89f01f5"
+                "reference": "f59f1843111674c1b35ae472e00daf27c72caf6b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silarhi/cfonb-parser/zipball/d226bb84e315849554b0cc361668befea89f01f5",
-                "reference": "d226bb84e315849554b0cc361668befea89f01f5",
+                "url": "https://api.github.com/repos/silarhi/cfonb-parser/zipball/f59f1843111674c1b35ae472e00daf27c72caf6b",
+                "reference": "f59f1843111674c1b35ae472e00daf27c72caf6b",
                 "shasum": ""
             },
             "require": {
-                "php": "~8.1.0 || ~8.2.0 || ~8.3.0"
+                "php": ">=8.1"
             },
             "require-dev": {
-                "friendsofphp/php-cs-fixer": "^3.40",
-                "phpstan/phpstan": "^1.10.47",
-                "phpunit/phpunit": "^10.5.1",
-                "rector/rector": "^0.18",
-                "vimeo/psalm": "^5.16"
+                "friendsofphp/php-cs-fixer": "^3.64",
+                "phpstan/phpstan": "^1.12.9",
+                "phpunit/phpunit": "^10.5.26",
+                "rector/rector": "^1.2",
+                "vimeo/psalm": "^5.26"
             },
             "type": "library",
             "autoload": {
@@ -393,11 +393,11 @@
             ],
             "authors": [
                 {
-                    "name": "Guillaume Sainthillier",
+                    "name": "SILARHI",
                     "email": "hello@silarhi.fr"
                 }
             ],
-            "description": "A PHP Parser for CFONB transactions",
+            "description": "A PHP Parser for CFONB transactions with zero dependencies",
             "keywords": [
                 "cfonb",
                 "etebac",
@@ -406,9 +406,9 @@
             ],
             "support": {
                 "issues": "https://github.com/silarhi/cfonb-parser/issues",
-                "source": "https://github.com/silarhi/cfonb-parser/tree/5.0.0"
+                "source": "https://github.com/silarhi/cfonb-parser/tree/5.1.0"
             },
-            "time": "2023-12-02T07:37:19+00:00"
+            "time": "2024-11-11T15:57:50+00:00"
         },
         {
             "name": "symfony/apache-pack",
