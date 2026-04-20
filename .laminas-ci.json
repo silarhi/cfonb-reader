@@ -7,5 +7,10 @@
                 "php": "@lowest"
             }
         }
+    ],
+    "exclude": [
+        {
+            "name": "README Linting"
+        }
     ]
 }
