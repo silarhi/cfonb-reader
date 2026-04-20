@@ -16,7 +16,7 @@ use DateTimeInterface;
 abstract class AbstractCfonbCsvExporter
 {
     public function __construct(
-        protected TemporyFilesManager $temporyFilesManager
+        protected TemporyFilesManager $temporyFilesManager,
     ) {
     }
 

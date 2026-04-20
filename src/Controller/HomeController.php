@@ -94,7 +94,7 @@ class HomeController extends AbstractController
         DataStorageHandler $dataStorageHandler,
         CfonbManager $cfonbManager,
         Cfonb120CsvExporter $cfonb120CsvExporter,
-        Cfonb240CsvExporter $cfonb240CsvExporter
+        Cfonb240CsvExporter $cfonb240CsvExporter,
     ): Response {
         try {
             $data = $dataStorageHandler->get($id);
