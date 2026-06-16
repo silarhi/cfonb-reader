@@ -1,4 +1,6 @@
 {
+    "name": "silarhi/cfonb-reader",
+    "description": "CFONB statement file reader",
     "license": "proprietary",
     "type": "project",
     "require": {
