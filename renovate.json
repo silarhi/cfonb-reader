@@ -14,6 +14,10 @@
         {
             "matchUpdateTypes": ["major"],
             "automerge": false
+        },
+        {
+            "matchManagers": ["composer"],
+            "rangeStrategy": "bump"
         }
     ]
 }
