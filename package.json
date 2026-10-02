@@ -2,6 +2,7 @@
     "devDependencies": {
         "@babel/core": "^7.29.6",
         "@babel/preset-env": "^7.23.5",
+        "@biomejs/biome": "2.5.14",
         "@hotwired/stimulus": "^3.2.2",
         "@hotwired/turbo": "^8.0.21",
         "@symfony/stimulus-bridge": "^3.2.0",
@@ -27,10 +28,12 @@
         "dev": "encore dev",
         "watch": "encore dev --watch",
         "build": "encore production --progress",
-        "prepare": "husky install"
+        "prepare": "husky install",
+        "lint": "biome check --write assets webpack.config.js"
     },
     "lint-staged": {
-        "*.{js,css,scss,md}": "prettier --write",
+        "*.{js,jsx,ts,tsx,mjs,json}": "biome check --write --no-errors-on-unmatched",
+        "*.{css,scss,md,yml,yaml}": "prettier --write",
         "*.php": "vendor/bin/php-cs-fixer fix --config=.php-cs-fixer.dist.php",
         "composer.json": "composer normalize"
     },
